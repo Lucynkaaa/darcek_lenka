@@ -1,0 +1,290 @@
+:root {
+  --header-h: 120px;
+}
+@font-face {
+  font-family: ppcFont;
+  src: url(Super\ Adorable.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fff;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+h1 {
+  padding: auto;
+  left: 50%;
+  top: 17%;
+  text-align: center;
+  font-family: ppcFont, cursive, sans-serif;
+  font-size: 5.75rem;
+  color: #ff69b4;
+  z-index: 20;
+  margin: 0;
+}
+
+#balloon-container {
+  position: fixed;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  transition: opacity 500ms;
+  z-index: 100;
+}
+.balloon {
+  height: 125px;
+  width: 105px;
+  border-radius: 75% 75% 70% 70%;
+  position: relative;
+}
+.balloon:before {
+  content: "";
+  height: 75px;
+  width: 1px;
+  padding: 1px;
+  background-color: #fdfd96;
+  display: block;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.balloon:after {
+  content: "▲";
+  text-align: center;
+  display: block;
+  position: absolute;
+  color: inherit;
+  top: 120px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#torta {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.9);
+  height: auto;
+  width: 100%;
+  z-index: 0;
+}
+
+img {
+  align-self: center;
+  position: relative;
+  width: 40%;
+  height: auto;
+  z-index: 1;
+}
+#stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  margin: auto auto;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+#papier {
+  z-index: 5;
+  position: relative;
+  width: 45%;
+  height: 100%;
+  background-image: url(../images/papier.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+  z-index: 5;
+}
+
+h2 {
+  color: #d6336c;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#counter {
+  font-size: 2em;
+  color: #ff4d6d;
+  font-weight: bold;
+  position: static;
+  bottom: 0;
+}
+#counter-container {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #fdf6f0;
+  color: #444;
+  padding: 20px;
+}
+
+#timeline-container {
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 20px;
+  background: #fffafc;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(200, 170, 200, 0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #a86aa4;
+}
+
+#timeline {
+  position: relative;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 4px solid #eac7e1;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: #f7c8e0;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(150, 100, 150, 0.3);
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #c27ba0;
+}
+
+.timeline-text {
+  margin-top: 5px;
+  color: #555;
+}
+
+#polaroid-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+#polaroid-frame {
+  background: #fff;
+  border: 2px solid #eac7e1;
+  box-shadow: 0 8px 15px rgba(150, 100, 150, 0.2);
+  padding: 10px;
+  width: 450px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+#polaroid-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #a86aa4;
+  font-style: italic;
+}
+
+#prev,
+#next {
+  background-color: #f7c8e0;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(150, 100, 150, 0.2);
+  transition: background 0.3s;
+}
+
+#prev:hover,
+#next:hover {
+  background-color: #f4b6d4;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(110vh) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-300vh) rotate(10deg);
+    opacity: 0;
+  }
+}
+@media (max-width: 770px) {
+  h1 {
+    font-size: 4.8rem;
+    top: 10%;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  #counter {
+    font-size: 1.5em;
+  }
+
+  img {
+    width: 90%;
+    top: 55%;
+  }
+
+  #papier {
+    width: 100%;
+    height: 100%;
+  }
+
+  #stage {
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
