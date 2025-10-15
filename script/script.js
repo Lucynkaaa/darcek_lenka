@@ -8,11 +8,11 @@ function getRandomStyles() {
   const b = random(255);
   const mt = random(200);
   const ml = random(50);
-  const dur = random(5) + 5;
+  const dur = random(7) + 5;
   return `
     background-color: rgb(${r},${g},${b});
     color: rgba(${r},${g},${b},0.9);
-    box-shadow: inset -7px -3px 10px rgba(${r - 10},${g - 10},${b - 10},0.7);
+    box-shadow: inset -7px -3px 10px rgb(${r - 10},${g - 10},${b - 10});
     margin: ${mt}px 0 0 ${ml}px;
     animation: float ${dur}s ease-in 1 forwards;
   `;
