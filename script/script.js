@@ -58,11 +58,11 @@ window.addEventListener(
   { once: true }
 );
 const photos = [
-  { src: "images/kvietky.JPEG", caption: "Kvetinky od teba <3" },
-  { src: "fotka2.jpg", caption: "Prvá pusinka" },
-  { src: "fotka3.jpg", caption: "Spinkanie spolu" },
-  { src: "fotka4.jpg", caption: "Balíček od teba" },
-  { src: "fotka5.jpg", caption: "Ružička z 22.6." },
+  { src: "fotka1,jpg", caption: "" },
+  { src: "fotka2.jpg", caption: "" },
+  { src: "fotka3.jpg", caption: "" },
+  { src: "fotka4.jpg", caption: "" },
+  { src: "fotka5.jpg", caption: "" },
 ];
 
 let current = 0;
