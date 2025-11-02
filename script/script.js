@@ -58,10 +58,10 @@ window.addEventListener(
   { once: true }
 );
 const photos = [
+  { src: "images/fotka1.JPEG", caption: "Kvetinky od teba" },
   { src: "images/fotka2.jpg", caption: "" },
   { src: "images/fotka3.JPEG", caption: "" },
   { src: "images/fotka4.JPEG", caption: "" },
-  { src: "images/fotka2.JPEG", caption: "" },
 ];
 
 let current = 0;
