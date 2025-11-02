@@ -58,11 +58,10 @@ window.addEventListener(
   { once: true }
 );
 const photos = [
-  { src: "fotka1,jpg", caption: "" },
-  { src: "fotka2.jpg", caption: "" },
-  { src: "fotka3.jpg", caption: "" },
-  { src: "fotka4.jpg", caption: "" },
-  { src: "fotka5.jpg", caption: "" },
+  { src: "images/fotka2.jpg", caption: "" },
+  { src: "images/fotka3.JPEG", caption: "" },
+  { src: "images/fotka4.JPEG", caption: "" },
+  { src: "images/fotka2.JPEG", caption: "" },
 ];
 
 let current = 0;
