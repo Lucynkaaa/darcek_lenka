@@ -59,6 +59,8 @@ window.addEventListener(
 );
 const photos = [
   { src: "images/fotka1.JPEG", caption: "Kvetinky od teba" },
+  { src: "images/fotka5.jpg", caption: "Pedofília na spiši" },
+  { src: "images/fotka6.JPEG", caption: "Moja prvá fotka teba haha" },
   { src: "images/fotka2.jpg", caption: "Tvoja pusinka na mne" },
   { src: "images/fotka3.JPEG", caption: "Povedala som ANO!" },
   { src: "images/fotka4.JPEG", caption: "Naša prva spoločna fotka!!!" },
