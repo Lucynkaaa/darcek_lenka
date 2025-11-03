@@ -88,7 +88,6 @@ const events = [
   { date: "29.5.", text: "Pribudol môj nový parťák na spinkanie" },
   { date: "5.6.", text: "Sľúbila si, že si kľakneš predomňa, keď prídeš" },
   { date: "16.6.", text: "Prvé stretko, prvá pusaaaa" },
-  { date: "17.6.", text: "Spomienka na to, ako si prehrala v parku :P" },
   { date: "18.7. - 20.7", text: "Najlepší víkend s tebou" },
   { date: "18.7.", text: "Naša prvá noc spolu" },
   { date: "25.7.", text: "Uznala si, že ťa ľúbim viac" },
@@ -96,7 +95,7 @@ const events = [
   { date: "24.8.", text: "Uznala si, že si pdf :P" },
   { date: "14.9.", text: "Napísala si, že som tvoja spriaznená duša" },
   { date: "12.10.", text: "Call kde sme obidve zaspinkali" },
-  { date: "30.10.", text: "Padla ta dlho očakávana otázka" },
+  { date: "30.10.", text: "Padla ta dlho očakávana otázka a ja som povedala áno" },
 ];
 
 const timeline = document.getElementById("timeline");
@@ -129,3 +128,4 @@ function updateCounter() {
 
 setInterval(updateCounter, 1000);
 updateCounter();
+
