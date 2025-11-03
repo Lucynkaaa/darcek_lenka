@@ -59,6 +59,7 @@ const photos = [
   { src: "images/fotka2.jpg", caption: "Tvoja pusinka na mne" },
   { src: "images/fotka3.JPEG", caption: "Povedala som ANO!" },
   { src: "images/fotka4.JPEG", caption: "Naša prva spoločna fotka!!!" },
+  { src: "images/fotka7.JPEG", caption: "Spinky tiime" },
 ];
 
 let current = 0;
