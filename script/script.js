@@ -95,7 +95,7 @@ const events = [
   { date: "24.8.", text: "Uznala si, že si pdf :P" },
   { date: "14.9.", text: "Napísala si, že som tvoja spriaznená duša" },
   { date: "12.10.", text: "Call kde sme obidve zaspinkali" },
-  { date: "30.10.", text: "Padla ta dlho očakávana otázka a ja som povedala áno" },
+  { date: "30.10.", text: "Prvý den kedy sme oficiálne frajerkyyy" },
 ];
 
 const timeline = document.getElementById("timeline");
@@ -128,4 +128,3 @@ function updateCounter() {
 
 setInterval(updateCounter, 1000);
 updateCounter();
-
