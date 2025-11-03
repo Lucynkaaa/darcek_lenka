@@ -47,16 +47,11 @@ function createBalloonsOnce(num) {
 }
 
 // Spawn once on full load
-window.addEventListener("load", () => createBalloonsOnce(20), { once: true });
+window.addEventListener("load", () => {
+  createBalloons(20);
+  setTimeout(removeBalloons, 8000); // zmiznú po 8 sekundách
+});
 
-// Handle bfcache restores (Safari/Firefox)
-window.addEventListener(
-  "pageshow",
-  (e) => {
-    if (e.persisted) createBalloonsOnce(20);
-  },
-  { once: true }
-);
 const photos = [
   { src: "images/fotka1.JPEG", caption: "Kvetinky od teba" },
   { src: "images/fotka5.jpg", caption: "Pedofília na spiši" },

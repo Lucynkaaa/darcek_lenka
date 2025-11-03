@@ -109,6 +109,101 @@ img {
   z-index: 5;
 }
 
+#my-photos {
+  text-align: center;
+  margin: 80px auto;
+  padding: 40px 10px;
+  max-width: 1000px;
+}
+
+#my-photos h2 {
+  color: #a86aa4;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.photo-strings {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  position: relative;
+}
+
+/* samotná šnúra */
+.string {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+.string::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 2px;
+  background-color: #cfa3c9;
+  z-index: 0;
+}
+
+/* polaroid rámček */
+.photo-frame {
+  background: #fff;
+  width: 220px;
+  height: 270px;
+  border: 2px solid #eac7e1;
+  box-shadow: 0 8px 15px rgba(150, 100, 150, 0.3);
+  border-radius: 8px;
+  padding: 10px;
+  transform: rotate(calc(-5deg + 10deg * var(--tilt, 0.5)));
+  transition: transform 0.2s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+/* kolíček na šnúre */
+.photo-frame::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 20px;
+  background: #f7c8e0;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.photo-frame:hover {
+  transform: scale(1.05) rotate(0deg);
+  z-index: 5;
+}
+
+/* responzívne správanie pre iPhone */
+@media (max-width: 600px) {
+  .string {
+    gap: 20px;
+  }
+  .photo-frame {
+    width: 100px;
+    height: 120px;
+  }
+}
+
 #papier {
   z-index: 5;
   position: relative;
@@ -120,6 +215,10 @@ img {
   background-size: contain;
   text-align: center;
   z-index: 5;
+}
+p {
+  text-align: center;
+  color: #a86aa4;
 }
 
 h2 {
