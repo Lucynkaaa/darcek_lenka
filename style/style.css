@@ -155,7 +155,7 @@ img {
 .photo-frame {
   background: #fff;
   width: 220px;
-  height: 300px; /* taller to create the polaroid "caption" area */
+  height: 250px; /* taller to create the polaroid "caption" area */
   border: 2px solid #eac7e1;
   box-shadow: 0 8px 15px rgba(150, 100, 150, 0.3);
   border-radius: 8px;
@@ -172,8 +172,8 @@ img {
 
 .photo-frame img {
   width: 100%;
-  height: auto;
-  max-height: 70%; /* keep image inside the top portion */
+  height: 100%;
+  max-height: 92%; /* keep image inside the top portion */
   object-fit: cover;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
@@ -197,36 +197,6 @@ img {
 .photo-frame:hover {
   transform: scale(1.05) rotate(0deg);
   z-index: 5;
-}
-
-/* responzívne správanie pre iPhone */
-@media (max-width: 600px) {
-  .string {
-    gap: 18px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  .photo-frame {
-    width: 140px;
-    height: 190px;
-    padding: 10px 10px 22px;
-  }
-  .photo-frame img {
-    max-height: 70%;
-    border-radius: 6px;
-  }
-}
-
-/* extra small phones */
-@media (max-width: 420px) {
-  .photo-frame {
-    width: 120px;
-    height: 170px;
-    padding: 8px 8px 20px;
-  }
-  .string {
-    gap: 12px;
-  }
 }
 
 #papier {
@@ -410,5 +380,33 @@ h2 {
     flex-direction: column;
     margin: auto;
     margin-bottom: 10px;
+  }
+  .string {
+    gap: 18px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .photo-frame {
+    width: 140px;
+    height: 190px;
+    padding: 10px 10px 22px;
+  }
+  .photo-frame img {
+    max-height: 95%;
+    border-radius: 6px;
+    top: 0;
+  }
+}
+@media (max-width: 420px) {
+  .photo-frame {
+    width: 120px;
+    height: 170px;
+    padding: 8px 8px 20px;
+  }
+  .photo-frame img {
+    top: 0;
+  }
+  .string {
+    gap: 12px;
   }
 }
